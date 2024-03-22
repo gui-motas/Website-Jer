@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/media/favicon.png" />
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>JɆⱤ MUSIC</title>
+</head>
+
+<body>
+
+    <div class="nav_home">
+        <a href="index.html">HOME</a>
+        <a href="video.html">VIDEO</a>
+        <a href="shop.html">SHOP</a>
+        <a href="contacts.html">CONTACT</a>
+    </div>
+
+    <div id="downElements">
+        <div id> © 2024 JER </div>
+
+        <button onclick="showCredits()" id="creditsbtn">CREDITS</button>
+        <nav class="socialMedias">
+            <a href="https://jermusicca.bandcamp.com" target="_blank"><img src="/assets/media/icons/Bandcamp.png"
+                    alt="bandcampicon"></a>
+            <a href="https://www.instagram.com/jermusicca/" target="_blank"><img src="/assets/media/icons/instagram.png"
+                    alt="instagramIcon"></a>
+            <a href="https://www.tiktok.com/@jermusicca" target="_blank"><img src="/assets/media/icons/tiktokicon.png"
+                    alt="tiktokicon"></a>
+            <a href="https://www.facebook.com/jermusicca" target="_blank"><img src="/assets/media/icons/Facebook.png"
+                    alt="facebookicon"></a>
+        </nav>
+    </div>
+
+    <section id="song_gallery">
+
+        <div class="song">
+            <div class="expandDiv" onclick="alternarMusic('music1')">
+                <div>1.</div>
+                <div>BROKEN</div>
+            </div>
+            <div class="musicLinks" id="music1">
+
+                <a href="https://jermusicca.bandcamp.com/track/broken-jer-single" target="_blank"><img
+                        src="/assets/media/icons/Bandcamp.png" alt="bandcampicon"></a>
+                <a href="https://open.spotify.com/intl-pt/track/24UVDtunOhnqLGMdRO89zL?si=1be7d5c98b83453f"
+                    target="_blank"><img src="/assets/media/icons/Spotify.png" alt="instagramIcon"></a>
+                <a href="https://amazon.com/music/player/tracks/B0BNK3D39R?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cqduUV9Mc2jJeTPeWhnZJf2Sf"
+                    target="_blank"><img src="/assets/media/icons/Amazon Music.png" alt="tiktokicon"></a>
+                <a href="https://music.apple.com/ca/album/broken/1656840015?i=1656840526"><img
+                        src="/assets/media/icons/Apple Logo.png" alt="appleicon"></a>
+                <a href="https://tidal.com/browse/track/263252736" target="_blank"> <img src="/assets/media/icons/Tidal.png"
+                        alt="tidalicon"></a>
+
+            </div>
+        </div>
+        <div class="song">
+            <div class="expandDiv" onclick="alternarMusic('music2')">
+                <div>2.</div>
+                <div>JIA MA</div>
+            </div>
+
+            <div class="musicLinks" id="music2">
+
+                <div class="musicLinksContainer">
+
+                    <iframe class="desktop" style="border-radius: 0px; width: 450px; height: 120px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/track=1888967337/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                    <iframe class="mobile" style="border: 0px; width: 300px; height: 44px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=small/bgcol=333333/linkcol=ffffff/track=1888967337/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="song">
+            <div class="expandDiv" onclick="alternarMusic('music3')">
+                <div>3.</div>
+                <div>ÚLTIMO SOM</div>
+            </div>
+            <div class="musicLinks" id="music3">
+                <div class="musicLinksContainer">
+                    <iframe class="desktop" style="border-radius:0px; width: 450px; height: 120px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/track=2221989799/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                    <iframe class="mobile" style="border: 0; width: 300px; height: 42px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=small/bgcol=333333/linkcol=ffffff/track=2221989799/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="song">
+            <div class="expandDiv" onclick="alternarMusic('music4')">
+                <div>4.</div>
+                <div>ROSA SÔNICA</div>
+            </div>
+            <div class="musicLinks" id="music4">
+                <div class="musicLinksContainer">
+                    <iframe class="desktop" style="border-radius:0px;  width: 450px; height: 120px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/track=2395604386/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                    <iframe class="mobile" style="border: 0; width: 300px; height: 42px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=small/bgcol=333333/linkcol=ffffff/track=2395604386/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="song">
+            <div class="expandDiv" onclick="alternarMusic('music5')">
+                <div>5.</div>
+                <div>IT'S NOT A JOKE</div>
+            </div>
+            <div class="musicLinks" id="music5">
+                <div class="musicLinksContainer">
+                    <iframe class="desktop" style=" border-radius:0px; width: 450px; height: 120px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/track=2179191810/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                    <iframe class="mobile" style="border: 0; width: 300px; height: 42px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2985787973/size=small/bgcol=333333/linkcol=ffffff/track=2179191810/transparent=true/"
+                        seamless><a href="https://jermusicca.bandcamp.com/album/jer">JER de JER</a></iframe>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

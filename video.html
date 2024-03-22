@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/media/favicon.png" />
+    <script src="/assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>JɆⱤ VIDEO</title>
+</head>
+
+<body>
+
+
+
+    <div class="nav_home">
+        <a href="index.html">HOME</a>
+        <a href="music.html">MUSIC</a>
+        <a href="shop.html">SHOP</a>
+        <a href="contacts.html">CONTACT</a>
+    </div>
+
+    <div id="downElements">
+        <div id> © 2024 JER </div>
+
+        <button onclick="showCredits()" id="creditsbtn">CREDITS</button>
+        <nav class="socialMedias">
+            <a href="https://jervideoca.bandcamp.com" target="_blank"><img src="/assets/media/icons/Bandcamp.png"
+                    alt="bandcampicon"></a>
+            <a href="https://www.instagram.com/jervideoca/" target="_blank"><img src="/assets/media/icons/instagram.png"
+                    alt="instagramIcon"></a>
+            <a href="https://www.tiktok.com/@jervideoca" target="_blank"><img src="/assets/media/icons/tiktokicon.png"
+                    alt="tiktokicon"></a>
+            <a href="https://www.facebook.com/jervideoca" target="_blank"><img src="/assets/media/icons/Facebook.png"
+                    alt="facebookicon"></a>
+        </nav>
+    </div>
+
+    <section id="video_gallery">
+
+
+        <div class="video">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame1');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                <div>1.</div>
+                <div>JER at Dream in High Park stage, Toronto, ON</div>
+            </div>
+            <div class="videoFrame" id="videoFrame1">
+                <div class="videoFrameContainer">
+                    <div id="player1"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame2');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                <div>2.</div>
+                <div>JER - Broken (Official Video)</div>
+            </div>
+            <div class="videoFrame" id="videoFrame2">
+                <div class="videoFrameContainer">
+                    <div id="player2"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="video">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame3');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                <div>3.</div>
+                <div>It's not a joke Live - JER</div>
+            </div>
+            <div class="videoFrame" id="videoFrame3">
+                <div class="videoFrameContainer">
+                    <div id="player3" ></div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="expandDiv" onclick="alternarVideo('videoFrame4');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                    <div>4.</div>
+                    <div>Último som Live - JER</div>
+                </div>
+                <div class="videoFrame" id="videoFrame4">
+                    <div class="videoFrameContainer">
+                        <div id="player4" ></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="video">
+                <div class="expandDiv" onclick="alternarVideo('videoFrame5');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                    <div>5.</div>
+                    <div>Jia Mar Live - JER</div>
+                </div>
+                <div class="videoFrame" id="videoFrame5">
+
+                    <div class="videoFrameContainer">
+                     <div id="player5" ></div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <script>
+  var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player('player1', {
+            height: '315',
+            width: '560',
+            videoId: 'AOr1F1tQQcM',
+          
+        });
+        player2 = new YT.Player('player2', {
+            height: '315',
+            width: '560',
+            videoId: 'xWqZrx99fk4',
+           
+        });
+        player3 = new YT.Player('player3', {
+            height: '315',
+            width: '560',
+            videoId: '384ngkYgfsw',
+           
+        });
+        player4 = new YT.Player('player4', {
+            height: '315',
+            width: '560',
+            videoId: 'rluc5hjOhdc',
+           
+        });
+        player5 = new YT.Player('player5', {
+            height: '315',
+            width: '560',
+            videoId: 'ZX8Xrx7RmrI',
+           
+        });
+        
+    }
+
+    </script>
+</body>
+
+</html>

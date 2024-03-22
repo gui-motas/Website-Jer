@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" type="image/png" href="/assets/media/favicon.png" />
+  <script src="/assets/js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+  <title>JɆⱤ CONTACTS</title>
+</head>
+
+<body>
+
+  <div class="nav_home">
+    <a href="index.html">HOME</a>
+    <a href="music.html">MUSIC</a>
+    <a href="video.html">VIDEO</a>
+    <a href="shop.html">SHOP</a>
+  </div>
+  <div id="downElements">
+    <div id> © 2024 JER </div>
+
+    <button onclick="showCredits()" id="creditsbtn" >CREDITS</button>
+    <nav class="socialMedias">
+      <a href="https://jermusicca.bandcamp.com" target="_blank"><img src="/assets/media/icons/Bandcamp.png"
+          alt="bandcampicon"></a>
+      <a href="https://www.instagram.com/jermusicca/" target="_blank"><img src="/assets/media/icons/instagram.png"
+          alt="instagramIcon"></a>
+      <a href="https://www.tiktok.com/@jermusicca" target="_blank"><img src="/assets/media/icons/tiktokicon.png"
+          alt="tiktokicon"></a>
+      <a href="https://www.facebook.com/jermusicca" target="_blank"><img src="/assets/media/icons/Facebook.png" alt=""></a>
+    </nav>
+  </div>
+
+  <div id="contact_content">
+
+    <div id="titleContainer">
+      <h1>Leave a message</h1>
+    </div>
+
+
+      <form id="form"  action="https://formsubmit.co/jermusicca@gmail.com"  method="POST">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">PHONE</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">MESSAGE</label>
+        <textarea name="message" id="message" name="message"></textarea>
+
+        <div class="sendContainer">
+          <button type="submit" id="sendBtn" name="_next" value="">SEND</button>
+          <input type="hidden" name="_subject" value="New Message!">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://jersings.com">
+        </div>
+      </form>
+   
+      <div class="contact_msg">
+        <h2>Or contact us using the methods below</h2>
+        <div id="contacts">
+          <p>Booking - MGAM Agency - Luisa Gonzalez - <button
+              onclick="copiarTexto('luisa@mgam.com')">luisa@mgam.com</button></p>
+          <p>Artistic Manager - Tracy Jenkins - <button
+              onclick="copiarTexto('jenkins.tracyann@gmail.com')">jenkins.tracyann@gmail.com</button></p>
+          <p>Artistic Collaboration - JER - <button
+              onclick="copiarTexto('jermusicca@gmail.com')">jermusicca@gmail.com</button></p>
+        </div>
+      </div>
+
+    
+  </div>
+</body>
+
+</html>
