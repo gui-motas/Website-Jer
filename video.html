@@ -28,7 +28,7 @@
 
         <button onclick="showCredits()" id="creditsbtn">CREDITS</button>
         <nav class="socialMedias">
-            <a href="https://jervideoca.bandcamp.com" target="_blank"><img src="/assets/media/icons/Bandcamp.png"
+            <a href="https://jermusicca.bandcamp.com/" target="_blank"><img src="/assets/media/icons/Bandcamp.png"
                     alt="bandcampicon"></a>
             <a href="https://www.instagram.com/jervideoca/" target="_blank"><img src="/assets/media/icons/instagram.png"
                     alt="instagramIcon"></a>
@@ -41,11 +41,10 @@
 
     <section id="video_gallery">
 
-
         <div class="video">
-            <div class="expandDiv" onclick="alternarVideo('videoFrame1');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame1');player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo();player6.pauseVideo()">
                 <div>1.</div>
-                <div>JER at Dream in High Park stage, Toronto, ON</div>
+                <div>Live at the Tranzac</div>
             </div>
             <div class="videoFrame" id="videoFrame1">
                 <div class="videoFrameContainer">
@@ -56,13 +55,26 @@
         </div>
 
         <div class="video">
-            <div class="expandDiv" onclick="alternarVideo('videoFrame2');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame2');player1.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo();player6.pauseVideo()">
                 <div>2.</div>
-                <div>JER - Broken (Official Video)</div>
+                <div>Dream in High Park stage</div>
             </div>
             <div class="videoFrame" id="videoFrame2">
                 <div class="videoFrameContainer">
                     <div id="player2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="expandDiv" onclick="alternarVideo('videoFrame3');player1.pauseVideo();player2.pauseVideo();player4.pauseVideo();player5.pauseVideo();player6.pauseVideo()">
+                <div>3.</div>
+                <div>Broken (Official Video)</div>
+            </div>
+            <div class="videoFrame" id="videoFrame3">
+                <div class="videoFrameContainer">
+                    <div id="player3"></div>
                 </div>
 
             </div>
@@ -70,38 +82,38 @@
 
 
         <div class="video">
-            <div class="expandDiv" onclick="alternarVideo('videoFrame3');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
-                <div>3.</div>
-                <div>It's not a joke Live - JER</div>
+            <div class="expandDiv" onclick="alternarVideo('videoFrame4');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player5.pauseVideo();player6.pauseVideo()">
+                <div>4.</div>
+                <div>It's not a joke Live</div>
             </div>
-            <div class="videoFrame" id="videoFrame3">
+            <div class="videoFrame" id="videoFrame4">
                 <div class="videoFrameContainer">
-                    <div id="player3" ></div>
+                    <div id="player4" ></div>
                 </div>
             </div>
 
             <div class="video">
-                <div class="expandDiv" onclick="alternarVideo('videoFrame4');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
-                    <div>4.</div>
-                    <div>Último som Live - JER</div>
+                <div class="expandDiv" onclick="alternarVideo('videoFrame5');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player6.pauseVideo()">
+                    <div>5.</div>
+                    <div>Último som Live</div>
                 </div>
-                <div class="videoFrame" id="videoFrame4">
+                <div class="videoFrame" id="videoFrame5">
                     <div class="videoFrameContainer">
-                        <div id="player4" ></div>
+                        <div id="player5" ></div>
                     </div>
                 </div>
 
             </div>
 
             <div class="video">
-                <div class="expandDiv" onclick="alternarVideo('videoFrame5');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
-                    <div>5.</div>
-                    <div>Jia Mar Live - JER</div>
+                <div class="expandDiv" onclick="alternarVideo('videoFrame6');player1.pauseVideo();player2.pauseVideo();player3.pauseVideo();player4.pauseVideo();player5.pauseVideo()">
+                    <div>6.</div>
+                    <div>Jia Mar Live</div>
                 </div>
-                <div class="videoFrame" id="videoFrame5">
+                <div class="videoFrame" id="videoFrame6">
 
                     <div class="videoFrameContainer">
-                     <div id="player5" ></div>
+                     <div id="player6" ></div>
                     </div>
                 </div>
             </div>
@@ -115,31 +127,39 @@
 
     var player;
     function onYouTubeIframeAPIReady() {
+
         player1 = new YT.Player('player1', {
+            height: '315',
+            width: '560',
+            videoId: 'MUixxm6drTY',
+          
+        });
+
+        player2 = new YT.Player('player2', {
             height: '315',
             width: '560',
             videoId: 'AOr1F1tQQcM',
           
         });
-        player2 = new YT.Player('player2', {
+        player3 = new YT.Player('player3', {
             height: '315',
             width: '560',
             videoId: 'xWqZrx99fk4',
            
         });
-        player3 = new YT.Player('player3', {
+        player4 = new YT.Player('player4', {
             height: '315',
             width: '560',
             videoId: '384ngkYgfsw',
            
         });
-        player4 = new YT.Player('player4', {
+        player5 = new YT.Player('player5', {
             height: '315',
             width: '560',
             videoId: 'rluc5hjOhdc',
            
         });
-        player5 = new YT.Player('player5', {
+        player6 = new YT.Player('player6', {
             height: '315',
             width: '560',
             videoId: 'ZX8Xrx7RmrI',
